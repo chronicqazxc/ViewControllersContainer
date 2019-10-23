@@ -4,7 +4,8 @@ This is the demo app which present the usage of childViewControllers.
 ## ChildViewControllerDemo Intro
 The app consist of a view controller which contained two child table view controllers.
 When user tapped cells in the left view controller, the amount of cells in the right view controllers will increase.
-You can find the demo video below.
+You can find the demo video below.   
+
 ![](./ChildViewControllers.gif)
 
 ## Architecture
