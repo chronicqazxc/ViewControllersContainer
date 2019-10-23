@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnimalTableViewController: UITableViewController {
+class AnimalListTableViewController: UITableViewController {
     
     let animals = [
         Animal.Cat,
@@ -51,14 +51,14 @@ class AnimalTableViewController: UITableViewController {
 
 }
 
-extension AnimalTableViewController {
-    static func instance() -> AnimalTableViewController {
+extension AnimalListTableViewController {
+    static func instance() -> AnimalListTableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "AnimalTableViewController") as! AnimalTableViewController
+        return storyboard.instantiateViewController(withIdentifier: "AnimalListTableViewController") as! AnimalListTableViewController
     }
 }
 
-extension AnimalTableViewController: AnimalCategoryTableViewControllerDataSource {
+extension AnimalListTableViewController: AnimalCartTableViewControllerDelegate {
     func animal() -> Animal {
         return selectedAnimal
     }

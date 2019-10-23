@@ -1,5 +1,5 @@
 //
-//  AnimalCategoryTableViewController.swift
+//  AnimalCartTableViewController.swift
 //  ChildViewControllerDemo
 //
 //  Created by Hsiao, Wayne on 2019/10/23.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol AnimalCategoryTableViewControllerDataSource: class {
+protocol AnimalCartTableViewControllerDelegate: class {
     func animal() -> Animal
 }
 
@@ -18,12 +18,9 @@ struct AnimalFactory {
     }
 }
 
-class AnimalCategoryTableViewController: UITableViewController {
+class AnimalCartTableViewController: UITableViewController {
     
-    weak var animalDataSource: AnimalCategoryTableViewControllerDataSource!
-    lazy var animalChanged: (String) -> Void = { [weak self] (animal: String) in
-        self?.tableView.reloadData()
-    }
+    weak var animalCartDelegate: AnimalCartTableViewControllerDelegate!
     
     var animals = [Animal]()
 
@@ -61,7 +58,7 @@ class AnimalCategoryTableViewController: UITableViewController {
     }
     
     @objc func animalSelected() {
-        animals.append(animalDataSource.animal())
+        animals.append(animalCartDelegate.animal())
         refreshTable()
     }
     
@@ -75,9 +72,9 @@ class AnimalCategoryTableViewController: UITableViewController {
     }
 }
 
-extension AnimalCategoryTableViewController {
-    static func instance() -> AnimalCategoryTableViewController {
+extension AnimalCartTableViewController {
+    static func instance() -> AnimalCartTableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        return storyboard.instantiateViewController(withIdentifier: "AnimalCategoryTableViewController") as! AnimalCategoryTableViewController
+        return storyboard.instantiateViewController(withIdentifier: "AnimalCartTableViewController") as! AnimalCartTableViewController
     }
 }

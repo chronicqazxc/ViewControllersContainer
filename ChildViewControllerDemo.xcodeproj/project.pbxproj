@@ -14,8 +14,8 @@
 		A608A121235FF05A00FAB77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A608A120235FF05A00FAB77E /* Assets.xcassets */; };
 		A608A124235FF05A00FAB77E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A608A122235FF05A00FAB77E /* LaunchScreen.storyboard */; };
 		A608A12F235FF05B00FAB77E /* ChildViewControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A12E235FF05B00FAB77E /* ChildViewControllerDemoUITests.swift */; };
-		A608A13A235FF25E00FAB77E /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A139235FF25E00FAB77E /* AnimalTableViewController.swift */; };
-		A608A13C235FF2AA00FAB77E /* AnimalCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A13B235FF2AA00FAB77E /* AnimalCategoryTableViewController.swift */; };
+		A608A13A235FF25E00FAB77E /* AnimalListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A139235FF25E00FAB77E /* AnimalListTableViewController.swift */; };
+		A608A13C235FF2AA00FAB77E /* AnimalCartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A13B235FF2AA00FAB77E /* AnimalCartTableViewController.swift */; };
 		A608A13E236013EA00FAB77E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A608A13D236013EA00FAB77E /* Animal.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +41,8 @@
 		A608A12A235FF05A00FAB77E /* ChildViewControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildViewControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A608A12E235FF05B00FAB77E /* ChildViewControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewControllerDemoUITests.swift; sourceTree = "<group>"; };
 		A608A130235FF05B00FAB77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A608A139235FF25E00FAB77E /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
-		A608A13B235FF2AA00FAB77E /* AnimalCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryTableViewController.swift; sourceTree = "<group>"; };
+		A608A139235FF25E00FAB77E /* AnimalListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListTableViewController.swift; sourceTree = "<group>"; };
+		A608A13B235FF2AA00FAB77E /* AnimalCartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCartTableViewController.swift; sourceTree = "<group>"; };
 		A608A13D236013EA00FAB77E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,8 +89,8 @@
 				A608A119235FF04C00FAB77E /* SceneDelegate.swift */,
 				A608A11B235FF04C00FAB77E /* ViewController.swift */,
 				A608A13D236013EA00FAB77E /* Animal.swift */,
-				A608A139235FF25E00FAB77E /* AnimalTableViewController.swift */,
-				A608A13B235FF2AA00FAB77E /* AnimalCategoryTableViewController.swift */,
+				A608A139235FF25E00FAB77E /* AnimalListTableViewController.swift */,
+				A608A13B235FF2AA00FAB77E /* AnimalCartTableViewController.swift */,
 				A608A11D235FF04C00FAB77E /* Main.storyboard */,
 				A608A120235FF05A00FAB77E /* Assets.xcassets */,
 				A608A122235FF05A00FAB77E /* LaunchScreen.storyboard */,
@@ -209,11 +209,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A608A13C235FF2AA00FAB77E /* AnimalCategoryTableViewController.swift in Sources */,
+				A608A13C235FF2AA00FAB77E /* AnimalCartTableViewController.swift in Sources */,
 				A608A11C235FF04C00FAB77E /* ViewController.swift in Sources */,
 				A608A118235FF04C00FAB77E /* AppDelegate.swift in Sources */,
 				A608A11A235FF04C00FAB77E /* SceneDelegate.swift in Sources */,
-				A608A13A235FF25E00FAB77E /* AnimalTableViewController.swift in Sources */,
+				A608A13A235FF25E00FAB77E /* AnimalListTableViewController.swift in Sources */,
 				A608A13E236013EA00FAB77E /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
