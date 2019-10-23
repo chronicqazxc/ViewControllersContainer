@@ -22,4 +22,4 @@ The reason that adopted this pattern is the `Notification` is a one way one to m
 In this scenario is suitable to transition data between view controllers by these patterns.
 
 ## Author
-[Wayne Hsiao](mailto: chronicqazxc@gmail.com)
+[Wayne Hsiao](mailto:chronicqazxc@gmail.com)
