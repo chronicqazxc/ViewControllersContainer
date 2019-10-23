@@ -7,6 +7,9 @@ When user tapped cells in the left view controller, the amount of cells in the r
 You can find the demo video below.
 ![](./ChildViewControllers.gif)
 
+## Architecture
+Used MVC as simple pattern simple architecture, this demo just focused on `ChildViewController` & `Data transition`.
+
 ## Concept
 **How to put multi-view controllers inside a UIView?**
    1. In the view controller, setup two container views in fixed position (left and right).
