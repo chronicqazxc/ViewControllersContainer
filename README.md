@@ -9,7 +9,7 @@ You can find the demo video below.
 ![](./ChildViewControllers.gif)
 
 ## Architecture
-Used MVC for simple pattern simple architecture, this demo just focused on `ChildViewController` & `Data transition` practice.
+In order to keep demo as simple as possilbe, I adopt MVC as the architecture design, this demo focused on demostrate the usage of `ChildViewController` & properly `Data transport`.
 
 ## Concept
 **How to put multi-view controllers inside a UIView?**
