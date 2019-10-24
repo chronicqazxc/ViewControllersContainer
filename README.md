@@ -13,10 +13,10 @@ Used MVC for simple pattern simple architecture, this demo just focused on `Chil
 
 ## Concept
 **How to put multi-view controllers inside a UIView?**
-   1. In the view controller, setup two container views in fixed position (left and right).
-   2. Generate left and right view controllers, then set the left and right view controller as child view controller.
-   3. Add left and right controller's view as subview.
-   4. Setup constraint for subviews.   
+   * In the view controller, setup two container views in fixed position (left and right).
+   * Generate left and right view controllers, then set the left and right view controller as child view controller.
+   * Add left and right controller's view as subview.
+   * Setup constraint for subviews.   
 ```swift
 func setupUI() {
         let animalList = AnimalTableViewController.instance()
@@ -75,7 +75,7 @@ Since the rule is tap left controller will change the right controller's amount 
     }    
 ```
 
-## Data Transition
+## Data Transport
 ![](./DataTransition.png)
 The reason that adopted this pattern is the `Notification` is a one way one to many communication but the `Delegate` is a one to one two way communication.
 In this scenario is suitable to transition data between view controllers by these patterns.
